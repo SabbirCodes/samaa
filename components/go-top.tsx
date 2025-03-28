@@ -10,7 +10,7 @@ export default function GoTop() {
   // Show button when page is scrolled down
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 400) {
         setIsVisible(true)
       } else {
         setIsVisible(false)
@@ -40,7 +40,7 @@ export default function GoTop() {
           whileHover={{scale: 1.05}}
           whileTap={{scale: 0.90}}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-black/70 hover:bg-black text-white p-4 rounded-full shadow-lg z-50 transition-colors duration-300 group"
+          className="fixed bottom-8 right-8 bg-white/80 backdrop-blur-md hover:bg-white text-black p-4 rounded-full shadow-lg z-40 transition-colors duration-300 group"
           aria-label="Go to top"
         >
           <MdAirplanemodeActive  

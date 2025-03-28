@@ -7,7 +7,7 @@ import { Instagram, Twitter, Facebook, Youtube, Mail, MapPin, Phone } from "luci
 export default function Footer() {
   return (
     <footer className="bg-black text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
+      <div className="container 2xl:max-w-[1400px] mx-auto px-4">
         <motion.div
           className="footer-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
           initial={{ opacity: 0, y: 50 }}
@@ -24,7 +24,7 @@ export default function Footer() {
               {[Instagram, Twitter, Facebook, Youtube].map((Icon, index) => (
                 <motion.a
                   key={index}
-                  href="#"
+                  href="#samaa"
                   className="text-gray-400 hover:text-amber-400 transition-colors"
                   whileHover={{ y: -5 }}
                 >
@@ -39,7 +39,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {["Europe", "Asia", "Africa", "South America", "North America", "Oceania"].map((item, index) => (
                 <motion.li key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-                  <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
+                  <Link href={`search?q=${item}`} className="text-gray-400 hover:text-amber-400 transition-colors">
                     {item}
                   </Link>
                 </motion.li>
@@ -50,9 +50,9 @@ export default function Footer() {
           <motion.div>
             <h4 className="text-lg font-semibold mb-6">Travel Styles</h4>
             <ul className="space-y-3">
-              {["Luxury", "Adventure", "Cultural", "Wellness", "Family", "Honeymoon"].map((item, index) => (
+              {["Luxury", "Adventure", "Cultural", "Wellness", "Family", "Nature"].map((item, index) => (
                 <motion.li key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-                  <Link href="#" className="text-gray-400 hover:text-amber-400 transition-colors">
+                  <Link href={`#${item}`} className="text-gray-400 hover:text-amber-400 transition-colors">
                     {item}
                   </Link>
                 </motion.li>

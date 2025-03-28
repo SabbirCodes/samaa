@@ -5,39 +5,10 @@ import { motion, useInView } from "motion/react"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User } from "lucide-react"
+import { blogPosts } from "@/data/blog-post"
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "10 Hidden Gems in Southeast Asia You Need to Visit",
-    excerpt:
-      "Discover off-the-beaten-path destinations in Southeast Asia that offer authentic experiences away from the tourist crowds.",
-    image: "https://images.unsplash.com/photo-1442544213729-6a15f1611937?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: "June 15, 2025",
-    author: "Emma Rodriguez",
-    category: "Destinations",
-  },
-  {
-    id: 2,
-    title: "The Ultimate Guide to Sustainable Travel in 2025",
-    excerpt:
-      "Learn how to minimize your environmental impact while maximizing your travel experiences with these eco-friendly travel tips.",
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: "May 22, 2025",
-    author: "Michael Chen",
-    category: "Travel Tips",
-  },
-  {
-    id: 3,
-    title: "How to Pack for a Month-Long Trip in Just a Carry-On",
-    excerpt:
-      "Expert packing tips and tricks to help you travel light without sacrificing comfort or style on extended journeys.",
-    image: "https://images.unsplash.com/photo-1536562833330-a59dc2305a5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: "April 10, 2025",
-    author: "Sarah Johnson",
-    category: "Travel Tips",
-  },
-]
+
+const blogs = blogPosts.slice(0,3)
 
 export default function TravelInspiration() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -85,7 +56,7 @@ export default function TravelInspiration() {
 
   return (
     <section id="travel-inspiration" ref={sectionRef} className="py-20 md:py-32">
-      <div className="container mx-auto px-4">
+      <div className="container 2xl:max-w-[1400px] mx-auto px-4">
         <motion.div
           ref={headingRef}
           className="text-center mb-16"
@@ -105,21 +76,21 @@ export default function TravelInspiration() {
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
         >
-          {blogPosts.map((post) => (
+          {blogs.map((post) => (
             <motion.div
-              key={post.id}
+              key={post.slug}
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300"
               variants={itemVariants}
               whileHover={{ y: -10 }}
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src={post.image || "/placeholder.svg"}
+                  src={post.image}
                   alt={post.title}
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-110"
                 />
-                <div className="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                <div className="absolute top-4 right-4 bg-amber-400 text-white text-xs font-bold px-3 py-1 rounded-full">
                   {post.category}
                 </div>
               </div>
@@ -140,7 +111,7 @@ export default function TravelInspiration() {
                 <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
 
                 <Link
-                  href={`/blog/${post.id}`}
+                  href={`/blog/${post.slug}`}
                   className="inline-flex items-center text-amber-400 hover:text-amber-600 font-medium"
                 >
                   Read More
@@ -169,7 +140,7 @@ export default function TravelInspiration() {
             href="/blog"
             className="bg-amber-400 text-black hover:bg-amber-500 font-semibold py-3 px-8 rounded-full transition-all duration-300"
           >
-            View All Articles
+            View All Blogs
           </Link>
         </motion.div>
       </div>
