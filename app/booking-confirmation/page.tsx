@@ -15,7 +15,7 @@ export default function BookingConfirmationPage() {
     dates: "May 15, 2023 - May 24, 2023",
     travelers: 2,
     totalAmount: "$3,998",
-    contactEmail: "support@samma.com",
+    contactEmail: "support@samaa.com",
     contactPhone: "+1 (555) 123-4567",
   })
 
