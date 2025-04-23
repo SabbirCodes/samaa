@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import type React from "react"
@@ -7,6 +8,7 @@ import { useSearchParams, useRouter } from "next/navigation"
 import Image from "next/image"
 import { Calendar, Clock, MapPin, Users, Check } from "lucide-react"
 import { dealsData } from "@/data/deals-data"
+
 
 export default function CheckoutPage() {
   const searchParams = useSearchParams()

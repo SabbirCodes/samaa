@@ -8,12 +8,24 @@ import Link from "next/link"
 import { blogPosts } from "@/data/blog-post"
 import ShareButton from "@/components/share-button"
 
-
+type BlogPost = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  date: string;
+  author: string;
+  category: string;
+  readTime: string;
+  likes: number;
+  tags: string[];
+};
 
 export default function BlogPostPage() {
   const params = useParams()
   const router = useRouter()
-  const [post, setPost] = useState<any>(null)
+  const [post, setPost] = useState<BlogPost | null>(null)
   const [loading, setLoading] = useState(true)
   const [liked, setLiked] = useState(false)
   const [bookmarked, setBookmarked] = useState(false)

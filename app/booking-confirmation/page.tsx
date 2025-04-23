@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { Check, Mail, Phone, Download, Share2 } from "lucide-react"
 import Link from "next/link"
@@ -9,15 +9,15 @@ export default function BookingConfirmationPage() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const success = searchParams.get("success") === "true"
-  const [bookingDetails, setBookingDetails] = useState({
+  const bookingDetails = {
     bookingNumber: "WL" + Math.floor(100000 + Math.random() * 900000),
     trip: "Greek Islands Hopping",
-    dates: "May 15, 2023 - May 24, 2023",
+    dates: "May 15, 2025 - May 24, 2025",
     travelers: 2,
     totalAmount: "$3,998",
     contactEmail: "support@samaa.com",
     contactPhone: "+1 (555) 123-4567",
-  })
+  }
 
   useEffect(() => {
     if (!success) {
