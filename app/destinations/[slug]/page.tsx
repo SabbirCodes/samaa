@@ -74,7 +74,6 @@ export default function DestinationDetail() {
 
   useEffect(() => {
     if (params && params.slug) {
-      const id = Array.isArray(params.id) ? params.id[0] : params.id;
       const foundDestination = destinationsData.find(
         (dest) => dest.slug === params.slug
       );

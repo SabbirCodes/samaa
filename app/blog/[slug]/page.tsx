@@ -97,7 +97,7 @@ export default function BlogPostPage() {
             </div>
 
             <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden mb-8">
-              <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
+              <Image src={post.image} alt={post.title} fill className="object-cover" />
             </div>
 
             <div className="flex justify-between items-center mb-8">

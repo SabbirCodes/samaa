@@ -16,7 +16,12 @@ import {
 import Link from "next/link";
 import { experiencesData } from "@/data/experiences-data";
 
-
+type DateType = {
+  id: number
+  date: string
+  availability: string
+  spots: number
+}
 
 export default function ExperienceDetailPage() {
   const params = useParams()
@@ -127,7 +132,7 @@ export default function ExperienceDetailPage() {
                       onClick={() => setActiveImage(index)}
                     >
                       <Image
-                        src={image || "/placeholder.svg"}
+                        src={image}
                         alt={`${experience.title} - image ${index + 1}`}
                         fill
                         className="object-cover"
@@ -316,7 +321,7 @@ export default function ExperienceDetailPage() {
                 <div className="mb-6">
                   <h3 className="font-bold mb-2">Select a Date</h3>
                   <div className="space-y-2">
-                    {experience.availableDates.map((date: any) => (
+                    {experience.availableDates.map((date: DateType) => (
                       <button
                         key={date.id}
                         className={`w-full p-3 rounded-lg border text-left ${
