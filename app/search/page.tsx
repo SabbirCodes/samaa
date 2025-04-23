@@ -31,7 +31,7 @@ export default function SearchPage() {
       )
       setResults(filteredResults)
       setLoading(false)
-    }, 800)
+    }, 600)
 
     return () => clearTimeout(timer)
   }, [query])

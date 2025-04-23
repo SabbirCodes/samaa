@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { Calendar, Clock, Users, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import { experiences } from "@/data/experiences";
-// import { experiencesData } from "@/data/experiences-data";
+// import { experiences } from "@/data/experiences";
+import { experiencesData } from "@/data/experiences-data";
 import Link from "next/link";
 
 const headerVariants = {
@@ -124,7 +124,7 @@ export default function ExperiencesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {experiences.map((experience, index) => (
+            {experiencesData.map((experience, index) => (
               <motion.div
                 className="bg-white rounded-xl overflow-hidden"
                 variants={cardVariants}

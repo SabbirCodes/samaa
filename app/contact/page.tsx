@@ -79,7 +79,7 @@ export default function ContactPage() {
                 {[{
                   icon: <MapPin size={24} className="text-amber-400" />, 
                   title: "Our Address", 
-                  details: "123 Travel Street, Comilla City, Bangladesh"
+                  details: "3550 Travel Street, Comilla, Bangladesh"
                 }, {
                   icon: <Mail size={24} className="text-amber-400" />, 
                   title: "Email Us", 

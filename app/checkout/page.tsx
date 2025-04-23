@@ -118,7 +118,7 @@ export default function CheckoutPage() {
                 </div>
                 <h2 className="text-2xl font-bold mb-2">Booking Successful!</h2>
                 <p className="text-gray-600 mb-4">
-                  Thank you for your booking. We're redirecting you to the confirmation page...
+                  {`Thank you for your booking. We're redirecting you to the confirmation page...`}
                 </p>
                 <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-amber-400 mx-auto"></div>
               </div>

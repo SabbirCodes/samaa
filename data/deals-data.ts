@@ -2375,24 +2375,4 @@ export const dealsData = [
       },
     ],
   },
-
-  {
-    slug: "santorini-greece",
-    title: "Santorini Island",
-    location: "Greece",
-    duration: "7 days",
-    image:
-      "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
-    dates: [
-      {
-        id: 1,
-        startDate: "May 15, 2025",
-        endDate: "May 21, 2025",
-        availability: "Available",
-        price: 2799,
-      },
-    ],
-  },
-  
 ];

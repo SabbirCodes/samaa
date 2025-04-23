@@ -34,7 +34,7 @@ const testimonials = [
       "Our safari in Tanzania was absolutely life-changing. From the moment we landed, Samaa took care of everything. Our guide was incredibly knowledgeable, and we saw the Big Five within the first three days! The accommodations were luxurious yet authentic, and the sunset dinners in the bush were magical.",
     image:
       "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    trip: "Tanzania Wildlife Safari",
+    trip: "Tanzania Safari Adventure",
   },
   {
     id: 2,

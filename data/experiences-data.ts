@@ -12,10 +12,10 @@ export const experiencesData = [
     image:
       "https://images.unsplash.com/photo-1523723169554-5d19ae4ed4f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     gallery: [
-      "https://images.unsplash.com/photo-1563789031959-4c02bcb41319?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1603288986894-c7cd0a74ccdd?q=80&w=2140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1587240852847-64aa45b0a993?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1610484638270-6895f60c4808?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1523723169554-5d19ae4ed4f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1656677476420-7159cac2366a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1661280795189-4e5c0f501520?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1721829119062-c0c5a79148de?q=80&w=2045&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
     dates: "Available April through October",
     price: 129,
@@ -77,7 +77,7 @@ export const experiencesData = [
     ],
   },
   {
-    id: 2,
+    slug: "kyoto-tea-ceremony",
     title: "Kyoto Tea Ceremony",
     location: "Kyoto, Japan",
     duration: "2 hours",
@@ -86,12 +86,13 @@ export const experiencesData = [
       "Experience the ancient art of Japanese tea ceremony in a traditional tea house. Learn about the history, philosophy, and techniques from a tea master.",
     fullDescription:
       "Immerse yourself in one of Japan's most refined cultural traditions with this authentic tea ceremony experience in Kyoto. Hosted in a centuries-old tea house nestled in a peaceful Japanese garden, this intimate ceremony offers a window into the heart of Japanese aesthetics and philosophy. \n\nYour experience begins with a short introduction to the history and significance of the Japanese tea ceremony (chado or 'the way of tea'), which dates back to the 9th century and was later refined into an art form that embodies harmony, respect, purity, and tranquility. \n\nGuided by a certified tea master wearing a traditional kimono, you'll learn about the meticulous preparation and presentation of matcha (powdered green tea), the significance of each utensil, and the meaning behind every graceful movement. The tea master will demonstrate the proper techniques before inviting you to prepare your own bowl of matcha following the traditional methods. \n\nAs you sip your tea, you'll also enjoy seasonal wagashi (traditional Japanese sweets) that complement the slightly bitter flavor of the matcha. Throughout the ceremony, your host will explain the deeper philosophical concepts of mindfulness and being present in the moment that are central to this practice. \n\nThis experience is conducted in a small group setting, ensuring personal attention and the opportunity to ask questions. You'll leave with not just memories of a unique cultural experience, but with a deeper understanding of Japanese values and aesthetics.",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/flagged/photo-1565080636132-56952ee2861c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "https://images.unsplash.com/flagged/photo-1565080636132-56952ee2861c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1571391034628-2a2261e8273f?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1521699492617-3ed82a0501d6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1667700920148-f10b72fa255e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
     dates: "Available year-round",
     price: 75,
@@ -149,6 +150,84 @@ export const experiencesData = [
       { id: 3, date: "June 17, 2023", availability: "Limited", spots: 2 },
       { id: 4, date: "June 18, 2023", availability: "Sold Out", spots: 0 },
       { id: 5, date: "June 19, 2023", availability: "Available", spots: 8 },
+    ],
+  },
+  {
+    slug: "machu-picchu-sunrise-tour",
+    title: "Machu Picchu Sunrise Tour",
+    location: "Cusco, Peru",
+    duration: "Full day",
+    groupSize: "Up to 10 people",
+    description:
+      "Witness the magical sunrise over Machu Picchu before the crowds arrive. Includes guided tour of the ancient citadel and free time to explore on your own.",
+    fullDescription:
+      "Start your day early with a breathtaking sunrise over the ancient Incan citadel of Machu Picchu. This guided tour offers an in-depth exploration of the site's history, architecture, and cultural significance. \n\nYour journey begins with a scenic train ride through the Sacred Valley, followed by a bus transfer to the entrance of Machu Picchu. As the sun rises, you'll witness the ruins bathed in golden light, creating a truly magical atmosphere. \n\nYour expert guide will lead you through the site's most iconic landmarks, including the Temple of the Sun, the Intihuatana stone, and the terraces of the agricultural sector. After the guided portion, you'll have free time to explore the site at your own pace or hike to the Sun Gate for panoramic views. \n\nThis experience is perfect for history enthusiasts, photographers, and anyone looking to connect with one of the world's most iconic landmarks.",
+    image:
+      "https://images.unsplash.com/photo-1445796068163-f1115a21bbd9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    gallery: [
+      "https://images.unsplash.com/photo-1445796068163-f1115a21bbd9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1569022363244-3997dd09c9e9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1601984297612-517e2642ab86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1609495602662-746c513cd35b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    dates: "Available year-round (best May to September)",
+    price: 250,
+    rating: 4.9,
+    reviews: 320,
+    includes: [
+      "Round-trip train tickets",
+      "Entrance fees to Machu Picchu",
+      "Professional English-speaking guide",
+      "Round-trip bus transfer to the site",
+      "Bottled water and snacks",
+    ],
+    excludes: [
+      "Gratuities (optional)",
+      "Personal expenses",
+      "Meals not mentioned",
+    ],
+    highlights: [
+      "Witness the sunrise over Machu Picchu",
+      "Guided tour of the ancient citadel",
+      "Free time to explore or hike to the Sun Gate",
+      "Scenic train ride through the Sacred Valley",
+      "Small group size for a personalized experience",
+    ],
+    itinerary: [
+      {
+        time: "4:00 AM",
+        activity: "Hotel pickup and transfer to train station",
+      },
+      {
+        time: "5:00 AM",
+        activity: "Scenic train ride to Aguas Calientes",
+      },
+      {
+        time: "6:30 AM",
+        activity: "Bus transfer to Machu Picchu entrance",
+      },
+      {
+        time: "7:00 AM",
+        activity: "Guided tour of Machu Picchu",
+      },
+      {
+        time: "10:00 AM",
+        activity: "Free time to explore or hike to the Sun Gate",
+      },
+      {
+        time: "1:00 PM",
+        activity: "Return to Aguas Calientes for lunch",
+      },
+      {
+        time: "3:00 PM",
+        activity: "Train ride back to Cusco",
+      },
+    ],
+    availableDates: [
+      { id: 1, date: "May 10, 2025", availability: "Available", spots: 8 },
+      { id: 2, date: "May 11, 2025", availability: "Limited", spots: 2 },
+      { id: 3, date: "May 12, 2025", availability: "Sold Out", spots: 0 },
+      { id: 4, date: "May 13, 2025", availability: "Available", spots: 10 },
     ],
   },
 ];

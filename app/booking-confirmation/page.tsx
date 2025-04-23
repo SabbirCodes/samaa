@@ -15,7 +15,7 @@ export default function BookingConfirmationPage() {
     dates: "May 15, 2023 - May 24, 2023",
     travelers: 2,
     totalAmount: "$3,998",
-    contactEmail: "support@wanderlust.com",
+    contactEmail: "support@samma.com",
     contactPhone: "+1 (555) 123-4567",
   })
 
@@ -71,7 +71,7 @@ export default function BookingConfirmationPage() {
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4">What's Next?</h2>
+                <h2 className="text-2xl font-bold mb-4">{`What's Next?`}</h2>
                 <ol className="space-y-4">
                   <li className="flex items-start">
                     <div className="bg-amber-100 text-amber-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
@@ -80,7 +80,7 @@ export default function BookingConfirmationPage() {
                     <div>
                       <p className="font-medium">Check your email</p>
                       <p className="text-gray-600">
-                        We've sent a confirmation email with all the details of your booking.
+                        {`We've sent a confirmation email with all the details of your booking.`}
                       </p>
                     </div>
                   </li>
@@ -103,7 +103,7 @@ export default function BookingConfirmationPage() {
                     <div>
                       <p className="font-medium">Get ready for your trip</p>
                       <p className="text-gray-600">
-                        We'll send you a detailed itinerary and travel tips closer to your departure date.
+                        {`We'll send you a detailed itinerary and travel tips closer to your departure date.`}
                       </p>
                     </div>
                   </li>

@@ -18,7 +18,7 @@ export default function Footer() {
           <motion.div>
             <h3 className="text-2xl font-bold mb-6">SAMAA</h3>
             <p className="text-gray-400 mb-6">
-              Crafting unforgettable journeys to the world's most extraordinary destinations.
+              {`Crafting unforgettable journeys to the world's most extraordinary destinations.`}
             </p>
             <div className="flex space-x-4">
               {[Instagram, Twitter, Facebook, Youtube].map((Icon, index) => (
@@ -65,11 +65,11 @@ export default function Footer() {
             <ul className="space-y-4">
               <motion.li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-amber-400 flex-shrink-0 mt-1" />
-                <span className="text-gray-400">123 Travel Street, Bangladesh</span>
+                <span className="text-gray-400">3550 Travel Street, Comilla, Bangladesh</span>
               </motion.li>
               <motion.li className="flex items-center space-x-3">
                 <Phone size={20} className="text-amber-400 flex-shrink-0" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+8801838425743</span>
               </motion.li>
               <motion.li className="flex items-center space-x-3">
                 <Mail size={20} className="text-amber-400 flex-shrink-0" />

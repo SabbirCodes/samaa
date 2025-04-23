@@ -64,9 +64,9 @@ export default function AboutPage() {
             >
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-700 mb-4">
-                Founded in 2010, Samaa was born from a passion for
+                {`Founded in 2006, Samaa was born from a passion for
                 authentic travel experiences and a desire to share the world's
-                most extraordinary destinations with curious travelers.
+                most extraordinary destinations with curious travelers.`}
               </p>
               <p className="text-gray-700 mb-4">
                 What began as a small team of travel enthusiasts has grown into

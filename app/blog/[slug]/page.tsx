@@ -51,7 +51,7 @@ export default function BlogPostPage() {
         <div className="pt-24 pb-16 md:pt-32 md:pb-24">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Article Not Found</h1>
-            <p className="text-xl mb-8">The article you're looking for doesn't exist or has been removed.</p>
+            <p className="text-xl mb-8">{`The article you're looking for doesn't exist or has been removed.`}</p>
             <button
               onClick={() => router.push("/blog")}
               className="bg-amber-400 hover:bg-amber-500 text-black font-semibold py-3 px-8 rounded-full transition-all duration-300"

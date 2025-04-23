@@ -5,7 +5,6 @@ import Testimonials from "@/components/testimonials"
 import Loader from "@/components/loader"
 import TravelInspiration from "@/components/travel-inspiration"
 import TravelDeals from "@/components/travel-deals"
-import TravelPlanning from "@/components/travel-planing"
 
 
 
@@ -17,7 +16,6 @@ export default function Home() {
       <Destinations />
       <Experience />
       <TravelDeals />
-      {/* <TravelPlanning /> */}
       <TravelInspiration />
       <Testimonials />
     </main>

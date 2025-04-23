@@ -273,7 +273,7 @@ export default function Destinations() {
               animate={controls}
               transition={{ type: "spring", damping: 30, stiffness: 200 }}
             >
-              {destinations.map((destination, index) => (
+              {destinations.map((destination) => (
                 <motion.div
                   key={destination.id}
                   className="relative group overflow-hidden rounded-lg cursor-pointer flex-shrink-0 px-2"

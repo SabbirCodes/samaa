@@ -29,7 +29,7 @@ export default function DealDetailPage() {
       const foundDeal = dealsData.find((d) => d.slug === params.id);
       setDeal(foundDeal || null);
       setLoading(false);
-    }, 800);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, [params.id]);
@@ -73,7 +73,7 @@ export default function DealDetailPage() {
               Deal Not Found
             </h1>
             <p className="text-xl mb-8">
-              The deal you're looking for doesn't exist or has been removed.
+              {`The deal you're looking for doesn't exist or has been removed.`}
             </p>
             <button
               onClick={() => router.push("/deals")}
@@ -95,7 +95,7 @@ export default function DealDetailPage() {
             <div className="lg:col-span-2">
               <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden mb-8">
                 <Image
-                  src={deal.image || "/placeholder.svg"}
+                  src={deal.image}
                   alt={deal.title}
                   fill
                   className="object-cover"
@@ -203,7 +203,7 @@ export default function DealDetailPage() {
                     className="flex items-center justify-between w-full bg-white p-4 rounded-lg shadow-sm"
                     onClick={() => toggleSection("includes")}
                   >
-                    <h2 className="text-xl font-bold">What's Included</h2>
+                    <h2 className="text-xl font-bold">{`What's Included`}</h2>
                     {openSection === "includes" ? (
                       <ChevronUp />
                     ) : (
@@ -233,7 +233,7 @@ export default function DealDetailPage() {
                     className="flex items-center justify-between w-full bg-white p-4 rounded-lg shadow-sm"
                     onClick={() => toggleSection("excludes")}
                   >
-                    <h2 className="text-xl font-bold">What's Not Included</h2>
+                    <h2 className="text-xl font-bold">{`What's Not Included`}</h2>
                     {openSection === "excludes" ? (
                       <ChevronUp />
                     ) : (

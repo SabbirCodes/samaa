@@ -78,8 +78,8 @@ export default function ExperienceDetailPage() {
               Experience Not Found
             </h1>
             <p className="text-xl mb-8">
-              The experience you're looking for doesn't exist or has been
-              removed.
+              {`The experience you're looking for doesn't exist or has been
+              removed.`}
             </p>
             <button
               onClick={() => router.push("/experiences")}
@@ -246,7 +246,7 @@ export default function ExperienceDetailPage() {
                     className="flex items-center justify-between w-full bg-white p-4 rounded-lg shadow-sm"
                     onClick={() => toggleSection("includes")}
                   >
-                    <h2 className="text-xl font-bold">What's Included</h2>
+                    <h2 className="text-xl font-bold">{`What's Included`}</h2>
                     {openSection === "includes" ? (
                       <ChevronUp />
                     ) : (
@@ -278,7 +278,7 @@ export default function ExperienceDetailPage() {
                     className="flex items-center justify-between w-full bg-white p-4 rounded-lg shadow-sm"
                     onClick={() => toggleSection("excludes")}
                   >
-                    <h2 className="text-xl font-bold">What's Not Included</h2>
+                    <h2 className="text-xl font-bold">{`What's Not Included`}</h2>
                     {openSection === "excludes" ? (
                       <ChevronUp />
                     ) : (

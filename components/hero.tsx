@@ -4,16 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { ArrowDown, Search } from "lucide-react";
-import Link from "next/link";
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
-  const router = useRouter()
-  const [searchQuery, setSearchQuery] = useState("")
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const checkMobile = () => {
@@ -29,11 +28,11 @@ export default function Hero() {
   }, []);
 
   const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     if (searchQuery.trim()) {
-      router.push(`/search?q=${encodeURIComponent(searchQuery)}`)
+      router.push(`/search?q=${encodeURIComponent(searchQuery)}`);
     }
-  }
+  };
 
   return (
     <section ref={heroRef} className="relative h-screen w-full overflow-hidden">
@@ -70,7 +69,7 @@ export default function Hero() {
           className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 3.1,duration: 0.8, ease: "easeOut" }}
+          transition={{ delay: 3.1, duration: 0.8, ease: "easeOut" }}
         >
           Explore Without Boundaries
         </motion.h1>
@@ -84,7 +83,6 @@ export default function Hero() {
           Discover extraordinary destinations, authentic experiences, and create
           memories that last a lifetime
         </motion.p>
-
 
         <motion.form
           className="w-full max-w-4xl bg-white/10 backdrop-blur-md rounded-full p-2 mb-10 flex flex-col md:flex-row"
@@ -110,31 +108,6 @@ export default function Hero() {
             Find Adventures
           </button>
         </motion.form>
-
-        <motion.div
-          className="flex flex-wrap justify-center gap-4"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 3.7, duration: 0.8, ease: "easeOut" }}
-        >
-          {[
-            "Beach Getaways",
-            "Mountain Escapes",
-            "Cultural Journeys",
-            "Wildlife Safaris",
-            "City Breaks",
-          ].map((category, index) => (
-            <Link
-              key={index}
-              href={`/destinations?category=${category
-                .toLowerCase()
-                .replace(" ", "-")}`}
-              className="bg-white/20 hover:bg-white/50 backdrop-blur-sm text-white px-4 py-2 rounded-full transition-all duration-300"
-            >
-              {category}
-            </Link>
-          ))}
-        </motion.div>
       </div>
 
       <motion.div
