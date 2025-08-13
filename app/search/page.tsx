@@ -2,19 +2,19 @@
 
 import type React from "react";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Search, MapPin } from "lucide-react";
 import { Destination, destinationsData } from "@/data/destination-data";
-import { Suspense } from "react";
 
 // Create a component that will use the search params and handle the search logic
 function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") || "";
   const [results, setResults] = useState<Destination[]>([]);
+  // We keep loading here for *subsequent* searches, not the initial render which Suspense handles
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -35,6 +35,8 @@ function SearchResults() {
     return () => clearTimeout(timer);
   }, [query]);
 
+  // This loading state now handles subsequent searches after the initial render.
+  // The initial render's loading is handled by the Suspense boundary.
   if (loading) {
     return (
       <div className="flex justify-center items-center py-20">
@@ -146,6 +148,15 @@ function SearchResultsLoading() {
   );
 }
 
+// Another loading fallback specifically for the search form
+function SearchFormLoading() {
+  return (
+    <div className="max-w-2xl mx-auto mb-12 flex justify-center py-3">
+      <div className="animate-pulse h-12 w-full bg-gray-200 rounded-lg"></div>
+    </div>
+  );
+}
+
 // Main page component
 export default function SearchPage() {
   return (
@@ -156,7 +167,12 @@ export default function SearchPage() {
             Search Results
           </h1>
 
-          <SearchForm />
+          {/* Wrap SearchForm with Suspense */}
+          <Suspense fallback={<SearchFormLoading />}>
+            <SearchForm />
+          </Suspense>
+
+          {/* Keep SearchResults wrapped with Suspense */}
           <Suspense fallback={<SearchResultsLoading />}>
             <SearchResults />
           </Suspense>

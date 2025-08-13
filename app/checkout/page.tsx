@@ -44,7 +44,7 @@ function CheckoutContent() {
         }
       }
       setLoading(false)
-    }, 800)
+    }, 600)
 
     return () => clearTimeout(timer)
   })
