@@ -157,7 +157,6 @@ export default function SearchPage() {
           </h1>
 
           <SearchForm />
-
           <Suspense fallback={<SearchResultsLoading />}>
             <SearchResults />
           </Suspense>

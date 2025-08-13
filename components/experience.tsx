@@ -131,10 +131,10 @@ export default function Experience() {
             {images.map((image) => (
               <motion.div
                 key={image.id}
-                className="relative overflow-hidden rounded-lg h-48 md:h-64"
+                className="relative overflow-hidden rounded-lg shadow-sm h-48 md:h-64"
                 initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
+                whileInView={{ opacity: 1, y: 0 ,}}
+                transition={{ delay: 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
